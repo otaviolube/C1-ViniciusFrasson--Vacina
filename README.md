@@ -1,5 +1,6 @@
 # C1-ViniciusFrasson--Vacina
-# Link do site 
+# Link do site appvacina.ddns.net
+
 
 
 ## Rotas para API de Produçao 
@@ -25,7 +26,7 @@
 
 ### Deletar: localhost:3000/api/RemoverPessoa/:cpf
 
-### Atualizar localhost:3000/api/AtualizarPessoa/:cpf
+### Atualizar :localhost:3000/api/AtualizarPessoa/:cpf
 
    
        "pessoa_nome":"claudiaS",
@@ -49,7 +50,7 @@
 
 ### Deletar: localhost:3000/api/RemoverUnidade/:id
 
-### Atualizar: ocalhost:3000/api/AtualizarUnidade/:id
+### Atualizar: localhost:3000/api/AtualizarUnidade/:id
 
 
        "nome_unidade": "TEST UPDATES",

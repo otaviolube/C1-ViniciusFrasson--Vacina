@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INDEX</title>
+  </head>
+
+  <style>
+    body{
+      margin-left: 50px;
+      margin-right: 50px;
+         
+    }
+    li{
+      font-size: 20px;
+    }
+  </style>
+  <body>
+    <h1>ROTAS PARA TESTAR API Prodution</h1>
+    <hr>
+    <h2>PESSOA</h2>
+    <h3>Cadastrar Pessoa</h3>
+    <li>localhost:3001/api/Cadastrarpessoa</li>
+    <h3>Encontrar Pessoas</h3>
+    <li>localhost:3001/api/ListarVariaspessoas</li>
+    <h3>Encontrar uma Pessoa</h3>
+    <li>localhost:3001/api/ListarUmapessoa/:cpf</li>
+    <h3>Atualizar Pessoa</h3>
+    <li>localhost:3001/api/AtualizarPessoa/:cpf</li>
+    <h3>
+      Body sample
+      <p>
+        { "pessoa_nome":"claudiaS", "data_nascimento": "01/02/1940",
+        "telefone_pessoa": "(27)99721-7421", "grupo_prioritario": false,
+        "endereco_pessoa":" Rua xyz , n 500, bairro abcsdf", "email_pessoa":
+        "mail@mail.com" }
+      </p>
+    </h3>
+    <h3>Deletar Pessoa</h3>
+    <li>localhost:3001/api/RemoverPessoa/:cpf</li>
+    <hr>
+    <h2>UNIDADE</h2>
+    <h3>Cadastrar Unidade</h3>
+    <li>localhost:3001/api/CadastrarUnidadeSaude</li>
+    <h3>Encontrar Unidade de Saude</h3>
+    <li>localhost:3001/api/ListarUnidadesSaude</li>
+    <h3>Encontrar uma Unidade Saude</h3>
+    <li>localhost:3001/api/ListarUmaUnidadeSaude/:id</li>
+    <h3>Atualizar Unidade Saude</h3>
+    <li>localhost:3001/api/AtualizarUnidade/:id</li>
+    <h3>
+      Body sample
+      <p>
+        {
+          "nome_unidade": "TEST UPDATES",
+               "descricao_unidade": "tes desc",
+               "endereco_unidade": "test endereco",
+               "telefone_unidade": "(27)98832-4848",
+               "email_unidade": "mail.com.br",
+               "latlong_unidade": "788855,558888"
+       }
+      </p>
+    </h3>
+    <h3>Deletar Unidade</h3>
+    <li>localhost:3001/api/RemoverUnidade/id</li>
+    <hr>
+    <hr>
+    <h2>Agendamento</h2>
+    <h3>Cadastrar Agendamento</h3>
+    <li>localhost:3001/api/CadastrarAtendimento/:pessoaid/:unidadeid/</li>
+    <h3>Encontrar Atendimentos</h3>
+    <li>localhost:3001/api/ListarVariosAtendimentos</li>
+    <h3>Encontrar um Atendimento</h3>
+    <li>localhost:3001/api/ListarUmAtendimento/:id</li>
+    <h3>Atualizar Atendimento</h3>
+    <li>localhost:3001/api/AtualizarAtendimento/:dataAtedimento formato (aaaa/mm/dd)</li>
+    <h3>
+      Body sample
+      <p>
+        "data_hora_agendamento": "2021/07/03",
+        "necessidades_especiais": false,
+        "observacoes_agendamento": "test endereco 55500"
+      </p>
+    </h3>
+    <h3>Deletar Atendimento</h3>
+    <li>localhost:3001/api/RemoverAtendimento/:id</li>
+    <hr>
+
+
+
+
+  </body>
+</html>

@@ -4,6 +4,7 @@ const UnidadeSaudeSchema = new mongoose.Schema({
   nome_unidade: {
     type: String,
     required: true,
+    unique: true,
   },
   descricao_unidade: {
     type: String,
